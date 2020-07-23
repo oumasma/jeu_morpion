@@ -1,9 +1,10 @@
-class Player
-  #TO DO : la classe a 2 attr_reader, son nom et sa valeur (X ou O).
 
-  
-  def initialize
-    #TO DO : doit régler son nom et sa valeur
+
+class Player   # Ce sont les joueurs d'une partie.
+  attr_accessor :name, :symbol   # nom et valeur du joueur (X ou O).
+ 
+  def initialize (name, symbol)  # règle son nom et sa valeur.
+    @name = name
+    @symbol = symbol
   end
-
 end

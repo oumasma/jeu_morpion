@@ -1,11 +1,17 @@
-class Application
-  def perform
-    # TO DO : méthode qui initialise le jeu puis contient des boucles while pour faire tourner le jeu tant que la partie n'est pas terminée.
-    # 
+require 'bundler'
+require 'pry'
+require 'rspec'
+Bundler.require
 
-  end
+$:.unshift File.expand_path("./../lib/", __FILE__)
 
-end
+require 'player'
+require 'board_case'
+require 'board'
+require 'game'
+ 
+# Cette classe va nous permettre de lancer le jeu. 
+
+Game.new.go
 
 
-Application.new.perform
